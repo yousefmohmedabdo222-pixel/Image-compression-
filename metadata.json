@@ -1,0 +1,6 @@
+{
+  "name": "ضاغط ومحول صيغ الصور",
+  "description": "أداة مجانية واحترافية لضغط الصور وتحويل صيغها (JPEG, PNG, WebP, AVIF) أونلاين مجاناً وبأعلى جودة من إعداد يوسف محمد عبد الفتاح.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

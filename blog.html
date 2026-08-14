@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مدونة دروس وتحسين الصور | WebP مقابل JPEG و PNG وطرق ضغط الصور</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="مقالات ودلائل تعليمية تفصيلية عن ضغط الصور، مقارنة صيغة WebP مع JPEG و PNG، وكيفية تحسين سرعة موقعك ونتائج محركات البحث (SEO)." />
+  <meta name="author" content="يوسف محمد عبد الفتاح" />
+  <link rel="canonical" href="https://example.com/blog.html" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="مدونة دروس وتحسين الصور | ضاغط ومحول صيغ الصور" />
+  <meta property="og:description" content="اقرأ أحدث المقالات عن تقنيات ضغط الصور وتحسين أداء صفحات الويب." />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="https://example.com/blog.html" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN & Local Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="/src/index.css" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6594391134376233" crossorigin="anonymous"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "مدونة ضاغط ومحول صيغ الصور",
+    "url": "https://example.com/blog.html",
+    "description": "دليل ودروس شاملة لضغط الصور وتحسين السرعة للمواقع.",
+    "publisher": {
+      "@type": "Person",
+      "name": "يوسف محمد عبد الفتاح",
+      "email": "yousefmohmedabdo222@gmail.com"
+    }
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="/index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 bg-gradient-to-tr from-indigo-600 to-violet-600 rounded-2xl flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+        </div>
+        <div>
+          <span class="text-xl font-black text-slate-900 dark:text-white tracking-tight">ضاغط الصور</span>
+          <span class="block text-xs font-semibold text-indigo-600 dark:text-indigo-400">ومحول الصيغ الاحترافي</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-bold">
+        <a href="/index.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">الرئيسية</a>
+        <a href="/blog.html" class="text-indigo-600 dark:text-indigo-400 font-extrabold">المدونة والدروس</a>
+        <a href="/about.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">عن الموقع</a>
+        <a href="/contact.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">اتصل بنا</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="/index.html" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-bold shadow-md shadow-indigo-600/20 transition active:scale-95">
+          جرب الأداة الآن
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-4 space-y-3 font-bold text-sm">
+      <a href="/index.html" class="block py-2 text-slate-600 dark:text-slate-300">الرئيسية</a>
+      <a href="/blog.html" class="block py-2 text-indigo-600 dark:text-indigo-400">المدونة والدروس</a>
+      <a href="/about.html" class="block py-2 text-slate-600 dark:text-slate-300">عن الموقع</a>
+      <a href="/contact.html" class="block py-2 text-slate-600 dark:text-slate-300">اتصل بنا</a>
+    </div>
+  </header>
+
+  <!-- Top Banner AdSense Placeholder -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div class="bg-slate-100 dark:bg-slate-800/60 border border-dashed border-slate-300 dark:border-slate-700 rounded-2xl p-4 text-center">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-0000000000000000"
+           data-ad-slot="6000000001"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <span class="text-xs text-slate-400 font-semibold">مساحة إعلانية (Google AdSense Placeholder)</span>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="py-12 bg-white dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-4">مدونة تحسين الصور وSEO الويب</h1>
+      <p class="text-base text-slate-600 dark:text-slate-300 font-medium max-w-2xl mx-auto">
+        دليلك الموثوق لفهم خوارزميات الضغط، المقارنة بين الصيغ الحديثة، واستراتيجيات تسريع المواقع الإلكترونية.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Articles Grid & Content -->
+  <main class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto space-y-12">
+    
+    <!-- Article 1: WebP vs JPEG vs PNG -->
+    <article id="article-1" class="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-10 border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-indigo-600 dark:text-indigo-400">
+        <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-950 rounded-full">مقارنة صيغ الصور</span>
+        <span>•</span>
+        <span class="text-slate-400">بقلم: يوسف محمد عبد الفتاح</span>
+        <span>•</span>
+        <span class="text-slate-400">وقت القراءة: 5 دقائق</span>
+      </div>
+
+      <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white leading-tight">
+        مقارنة شاملة: صيغة WebP مقابل JPEG و PNG - أيهما أفضل لموقعك الإلكتروني؟
+      </h2>
+
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        تعتبر الصور جزءاً لا يتجزأ من تجربة المستخدم في مواقع الويب اليوم. ومع ذلك، فإن الصور ذات الأحجام الكبيرة قد تشكل السبب الأول لبطء تحميل المواقع الإلكترونية. في هذا المقال، سنقارن بالتفصيل بين الصيغة الأكثر انتشاراً عالمياً **JPEG** والصيغة ذات الشفافية العالية **PNG** والجيل الجديد المتطور من جوجل **WebP**.
+      </p>
+
+      <!-- Article Breakdown -->
+      <div class="space-y-6 border-t border-slate-100 dark:border-slate-700/80 pt-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+        
+        <div>
+          <h3 class="text-lg font-black text-slate-900 dark:text-white mb-2">1. ما هي صيغة WebP ولماذا ابتكرتها جوجل؟</h3>
+          <p>
+            تعتبر صيغة WebP صيغة صور حديثة تم تطويرها بواسطة شركة Google في عام 2010 لتقديم ضغط أفضل بكثير من صيغ JPEG و PNG بدون تضحية بالجودة. توفر WebP ضغطاً أضيق بنسبة <strong>25% إلى 34%</strong> مقارنة بملفات JPEG المماثلة في الجودة البصرية.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-black text-slate-900 dark:text-white mb-2">2. جدول مقارنة الميزات الأساسية</h3>
+          <div class="overflow-x-auto my-4">
+            <table class="w-full text-right text-xs sm:text-sm border-collapse border border-slate-200 dark:border-slate-700">
+              <thead>
+                <tr class="bg-indigo-50 dark:bg-slate-900 text-slate-900 dark:text-white font-black">
+                  <th class="p-3 border border-slate-200 dark:border-slate-700">الميزة</th>
+                  <th class="p-3 border border-slate-200 dark:border-slate-700">JPEG / JPG</th>
+                  <th class="p-3 border border-slate-200 dark:border-slate-700">PNG</th>
+                  <th class="p-3 border border-slate-200 dark:border-slate-700 text-indigo-600 dark:text-indigo-400">WebP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 font-bold border border-slate-200 dark:border-slate-700">نوع الضغط</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700">مع فقدان (Lossy)</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700">بدون فقدان (Lossless)</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">يدعم كلا النوعين</td>
+                </tr>
+                <tr class="bg-slate-50 dark:bg-slate-800/40">
+                  <td class="p-3 font-bold border border-slate-200 dark:border-slate-700">دعم الشفافية (Alpha)</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700 text-red-500">لا يدعم</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700 text-emerald-600">يدعم بامتياز</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700 text-emerald-600 font-bold">يدعم بحجم أصغر بكثير</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold border border-slate-200 dark:border-slate-700">متوسط كفاءة توفير الحجم</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700">متوسط (50%)</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700">ضعيف للصور الفوتوغرافية</td>
+                  <td class="p-3 border border-slate-200 dark:border-slate-700 font-bold text-indigo-600">ممتاز (حتى 90%)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- In-Article AdSense Banner Placeholder -->
+        <div class="my-6 bg-slate-100 dark:bg-slate-800/60 border border-dashed border-slate-300 dark:border-slate-700 rounded-2xl p-3 text-center">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-0000000000000000"
+               data-ad-slot="6000000002"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <span class="text-xs text-slate-400 font-semibold">مساحة إعلانية داخل المقال (Google AdSense)</span>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-black text-slate-900 dark:text-white mb-2">3. الخلاصة والتوصية</h3>
+          <p>
+            إذا كنت تدير موقعاً إلكترونياً أو مدونة وترغب في تحسين سرعة التحميل واختبارات Core Web Vitals، فإن **تحويل كافة صورك إلى صيغة WebP مع الضغط بنسبة 80%** هو الخيار الأمثل على الإطلاق.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- Article 2: How Image Compression Works (Lossy vs Lossless) -->
+    <article id="article-2" class="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-10 border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-indigo-600 dark:text-indigo-400">
+        <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-950 rounded-full">خوارزميات الضغط</span>
+        <span>•</span>
+        <span class="text-slate-400">بقلم: يوسف محمد عبد الفتاح</span>
+        <span>•</span>
+        <span class="text-slate-400">وقت القراءة: 6 دقائق</span>
+      </div>
+
+      <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white leading-tight">
+        كيف تعمل خوارزميات ضغط الصور؟ الفرق بين الضغط مع فقدان البيانات وبدون فقدان
+      </h2>
+
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        هل تساءلت يوماً كيف يمكن تصغير حجم صورة من 5 ميجابايت إلى 300 كيلوبايت فقط دون أن تلاحظ أي تغير في الألوان أو التفاصيل؟ يكمن السر في الرياضيات والخوارزميات البرمجية المتقدمة لتقنيات الضغط.
+      </p>
+
+      <div class="space-y-6 border-t border-slate-100 dark:border-slate-700/80 pt-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+        
+        <div>
+          <h3 class="text-lg font-black text-slate-900 dark:text-white mb-2">1. الضغط مع فقدان البيانات (Lossy Compression)</h3>
+          <p>
+            تعتمد هذه التقنية على حذف البيانات الدقيقة المكررة التي لا تستطيع العين البشرية التمييز بينها بوضوح، مثل الفروق الطفيفة في درجات ظلال الألوان المتقاربة. خوارزميات مثل JPEG و WebP Lossy تقوم بترميز الصورة عبر تحويل دالة الجيب التمام المقطعة (Discrete Cosine Transform) لتقليل حجم البيانات المخزنة للبيكسلات.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-black text-slate-900 dark:text-white mb-2">2. الضغط بدون فقدان البيانات (Lossless Compression)</h3>
+          <p>
+            في الضغط بدون فقدان (مثل PNG أو WebP Lossless)، تقوم الخوارزمية بتجميع الأنماط والألوان المتشابهة وإعادة تنظيم شفرتها دون إزالة أي بيكسل مفرد. يُستخدم هذا النوع غالباً للشعارات، والأيقونات، والنصوص داخل الصور حيث تكون الدقة متناهية الأهمية.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-black text-slate-900 dark:text-white mb-2">3. كيف تستخدم أداتنا Canvas API لضغط الصور؟</h3>
+          <p>
+            عند رفع صورتك في موقعنا، تقوم شفرة JavaScript بتحميل الصورة داخل عنصر متصفح رقمي مخفي <code>&lt;canvas&gt;</code>، ومن ثم يتم تقليل معامل مصفوفة الألوان والتحويل إلى صيغ عالية الكفاءة بكسور من الثانية مباشرة على جهازك.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-12 pb-8 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-200 dark:border-slate-800">
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            </div>
+            <span class="text-lg font-black text-slate-900 dark:text-white">ضاغط ومحول صيغ الصور</span>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed max-w-sm">
+            موقع مجاني متخصص لضغط وتحويل صيغ الصور أونلاين بدقة عالية وبدون أي تأثير على الجودة.
+          </p>
+          <div class="pt-2 text-xs font-bold text-slate-700 dark:text-slate-300">
+            تم التطوير بواسطة: <span class="text-indigo-600 dark:text-indigo-400">يوسف محمد عبد الفتاح</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-black text-slate-900 dark:text-white mb-4">روابط سريعة</h4>
+          <ul class="space-y-2.5 text-xs font-bold text-slate-600 dark:text-slate-400">
+            <li><a href="/index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">الرئيسية (أداة الضغط)</a></li>
+            <li><a href="/blog.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">المدونة والدروس</a></li>
+            <li><a href="/about.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">عن الموقع والمنشئ</a></li>
+            <li><a href="/contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-black text-slate-900 dark:text-white mb-4">السياسات والتواصل</h4>
+          <ul class="space-y-2.5 text-xs font-bold text-slate-600 dark:text-slate-400 mb-4">
+            <li><a href="/privacy-policy.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">سياسة الخصوصية</a></li>
+            <li><a href="/terms.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">الشروط والأحكام</a></li>
+            <li><a href="/sitemap.xml" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">خريطة الموقع (Sitemap)</a></li>
+          </ul>
+          <div class="text-xs text-slate-500 font-semibold">
+            البريد الإلكتروني للتواصل: <a href="mailto:yousefmohmedabdo222@gmail.com" class="text-indigo-600 dark:text-indigo-400 underline block mt-0.5 dir-ltr text-right">yousefmohmedabdo222@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 text-center text-xs text-slate-400 font-semibold">
+        © 2026 ضاغط ومحول صيغ الصور. جميع الحقوق محفوظة | تم التطوير بواسطة يوسف محمد عبد الفتاح.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      if (menu) menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

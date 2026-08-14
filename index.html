@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ضاغط ومحول صيغ الصور أونلاين مجاناً | WebP, JPEG, PNG, AVIF</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="أداة مجانية وسريعة لضغط الصور وتحويل صيغها أونلاين. ادعم صيغ WebP و PNG و JPEG و AVIF مع الحفاظ على الجودة العالية وتقليل حجم الصور بنسبة تصل إلى 90%." />
+  <meta name="keywords" content="ضغط الصور, تحويل صيغ الصور, تقليل حجم الصور, WebP, JPEG, PNG, AVIF, ضغط الصور أونلاين, يوسف محمد عبد الفتاح" />
+  <meta name="author" content="يوسف محمد عبد الفتاح" />
+  <link rel="canonical" href="https://example.com/index.html" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="ضاغط ومحول صيغ الصور أونلاين مجاناً | WebP, JPEG, PNG, AVIF" />
+  <meta property="og:description" content="ضغط الصور وتقليل حجمها أونلاين مجاناً بأعلى جودة مع تحويل الصيغ الفوري بدون رفع الصور إلى أي خادم." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/index.html" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- KaTeX for Math Equations Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+  <!-- Tailwind CSS via CDN & Local Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="/src/index.css" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6594391134376233" crossorigin="anonymous"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ضاغط ومحول صيغ الصور",
+    "url": "https://example.com/index.html",
+    "description": "أداة مجانية لضغط الصور وتحويل صيغها أونلاين مجاناً بكل سهولة وأمان.",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "All",
+    "author": {
+      "@type": "Person",
+      "name": "يوسف محمد عبد الفتاح",
+      "email": "yousefmohmedabdo222@gmail.com"
+    }
+  }
+  </script>
+</head>
+<body class="bg-[#F8F9FA] text-[#1A1A1A] dark:bg-slate-900 dark:text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-black/10 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo & Nav -->
+      <div class="flex items-center gap-8">
+        <a href="/index.html" class="group flex items-center gap-2">
+          <span class="text-2xl sm:text-3xl font-bold tracking-tighter serif text-slate-900 dark:text-white">ضاغط الصور.</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-bold tracking-wide">
+          <a href="/index.html" class="text-slate-900 dark:text-white border-b-2 border-black dark:border-white pb-0.5">الرئيسية</a>
+          <a href="/blog.html" class="text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">المدونة والدروس</a>
+          <a href="/about.html" class="text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">عن الموقع</a>
+          <a href="/contact.html" class="text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">اتصل بنا</a>
+        </nav>
+      </div>
+
+      <!-- Action & Version Badge -->
+      <div class="flex items-center gap-4">
+        <div class="hidden lg:block text-[10px] uppercase tracking-widest font-mono text-slate-400 leading-tight text-left dir-ltr">
+          <p class="font-bold text-slate-700 dark:text-slate-300">Pro Edition 1.0</p>
+          <p>SEO & Adsense Ready</p>
+        </div>
+
+        <a href="#tool-section" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-black hover:bg-neutral-800 text-white dark:bg-white dark:text-black dark:hover:bg-neutral-200 text-xs font-bold tracking-widest uppercase transition shadow-sm">
+          ابدأ الضغط الآن
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-black/10 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 py-4 space-y-3 font-bold text-sm">
+      <a href="/index.html" class="block py-2 text-slate-900 dark:text-white font-bold border-r-2 border-black pl-2">الرئيسية</a>
+      <a href="/blog.html" class="block py-2 text-slate-600 dark:text-slate-300">المدونة والدروس</a>
+      <a href="/about.html" class="block py-2 text-slate-600 dark:text-slate-300">عن الموقع</a>
+      <a href="/contact.html" class="block py-2 text-slate-600 dark:text-slate-300">اتصل بنا</a>
+      <a href="/privacy-policy.html" class="block py-2 text-slate-600 dark:text-slate-300">سياسة الخصوصية</a>
+      <a href="/terms.html" class="block py-2 text-slate-600 dark:text-slate-300">الشروط والأحكام</a>
+    </div>
+  </header>
+
+  <!-- Top Banner AdSense Placeholder -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div class="bg-slate-100 dark:bg-slate-800/60 border border-dashed border-slate-300 dark:border-slate-700 rounded-2xl p-4 text-center">
+      <!-- Google AdSense Container Header -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-0000000000000000"
+           data-ad-slot="1000000001"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <span class="text-xs text-slate-400 font-semibold">مساحة إعلانية (Google AdSense Placeholder)</span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="py-12 md:py-16">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <div class="inline-block text-[11px] uppercase font-mono tracking-widest text-slate-500 border border-black/20 dark:border-white/20 px-3 py-1 mb-6">
+        أداة مجانية 100% • بدون حدود رفع
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-bold leading-[0.95] mb-6 serif tracking-tight text-slate-900 dark:text-white">
+        أدوات تحويل <br class="hidden sm:inline" />وضغط الصور.
+      </h1>
+      <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-medium leading-relaxed max-w-xl mx-auto">
+        قم بتقليل حجم ملفاتك دون فقدان الجودة. يدعم WebP و AVIF و JPEG لتحسين أداء موقعك وتصدر نتائج البحث.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN TOOL SECTION -->
+  <section id="tool-section" class="pb-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto bg-white dark:bg-slate-800 p-8 sm:p-10 border border-black dark:border-slate-700 shadow-editorial-lg">
+      
+      <!-- Compression Settings Panel -->
+      <div class="mb-8 p-6 bg-slate-50 dark:bg-slate-900/60 border border-black/10 dark:border-slate-700 space-y-6">
+        <div class="flex items-center justify-between border-b border-black/10 dark:border-slate-700 pb-4">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white flex items-center gap-2">
+            إعدادات الضغط والتحويل
+          </h2>
+          <span class="text-[10px] uppercase font-mono tracking-wider text-slate-400">تطبيق تلقائي</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Quality Slider -->
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <label for="quality-slider" class="text-xs uppercase font-mono tracking-widest text-slate-500 dark:text-slate-400">مستوى الضغط:</label>
+              <span id="quality-value" class="text-xs font-mono font-bold bg-black text-white px-2 py-0.5">80%</span>
+            </div>
+            <input id="quality-slider" type="range" min="10" max="100" value="80" class="w-full accent-black cursor-pointer" />
+            <div class="flex justify-between text-[11px] font-mono text-slate-500 mt-2">
+              <span>10%</span>
+              <span class="font-bold text-slate-900 dark:text-white">80%</span>
+              <span>100%</span>
+            </div>
+          </div>
+
+          <!-- Format Converter Preset -->
+          <div>
+            <label for="format-selector" class="block text-xs uppercase font-mono tracking-widest text-slate-500 dark:text-slate-400 mb-2">صيغة الإخراج:</label>
+            <div class="flex flex-wrap gap-2 mb-2">
+              <button type="button" data-format-btn="image/webp" class="px-3 py-1.5 bg-black text-white text-xs font-mono font-bold transition">WEBP</button>
+              <button type="button" data-format-btn="image/avif" class="px-3 py-1.5 border border-black/20 text-xs font-mono font-bold hover:bg-slate-100 dark:hover:bg-slate-700 transition">AVIF</button>
+              <button type="button" data-format-btn="image/jpeg" class="px-3 py-1.5 border border-black/20 text-xs font-mono font-bold hover:bg-slate-100 dark:hover:bg-slate-700 transition">JPG</button>
+              <button type="button" data-format-btn="image/png" class="px-3 py-1.5 border border-black/20 text-xs font-mono font-bold hover:bg-slate-100 dark:hover:bg-slate-700 transition">PNG</button>
+            </div>
+            <select id="format-selector" class="hidden">
+              <option value="image/webp" selected>WebP (موصى بها للويب)</option>
+              <option value="image/jpeg">JPEG / JPG</option>
+              <option value="image/png">PNG</option>
+              <option value="image/avif">AVIF</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dimension Resizing & Scale Preset Options -->
+        <div class="pt-4 border-t border-black/10 dark:border-slate-700 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <span class="text-xs uppercase font-mono tracking-widest text-slate-500 dark:text-slate-400">تغيير الأبعاد والمقياس (اختياري):</span>
+            <div class="flex items-center gap-1.5">
+              <span class="text-[10px] uppercase font-mono text-slate-400 ml-1">المقياس:</span>
+              <button type="button" data-scale="100" class="px-2 py-0.5 bg-black text-white dark:bg-white dark:text-black text-[11px] font-mono font-bold">100%</button>
+              <button type="button" data-scale="75" class="px-2 py-0.5 border border-black/20 text-[11px] font-mono hover:bg-slate-100 dark:hover:bg-slate-700">75%</button>
+              <button type="button" data-scale="50" class="px-2 py-0.5 border border-black/20 text-[11px] font-mono hover:bg-slate-100 dark:hover:bg-slate-700">50%</button>
+              <button type="button" data-scale="25" class="px-2 py-0.5 border border-black/20 text-[11px] font-mono hover:bg-slate-100 dark:hover:bg-slate-700">25%</button>
+            </div>
+          </div>
+
+          <!-- Social Media Presets -->
+          <div class="bg-white dark:bg-slate-900/50 p-3.5 border border-black/10 dark:border-slate-700 space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">مقاسات السوشيال ميديا الجاهزة:</span>
+              <span class="text-[10px] font-mono text-slate-400">اختر المنصة لضبط الأبعاد تلقائياً</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <button type="button" data-preset="1080x1080" class="px-2.5 py-1 border border-black/20 text-[11px] font-mono hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">إنستغرام مربع (1080×1080)</button>
+              <button type="button" data-preset="1080x1920" class="px-2.5 py-1 border border-black/20 text-[11px] font-mono hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">ستوري / ريلز (1080×1920)</button>
+              <button type="button" data-preset="1280x720" class="px-2.5 py-1 border border-black/20 text-[11px] font-mono hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">يوتيوب ثمنيل (1280×720)</button>
+              <button type="button" data-preset="1200x630" class="px-2.5 py-1 border border-black/20 text-[11px] font-mono hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">فيسبوك منشور (1200×630)</button>
+              <button type="button" data-preset="1200x675" class="px-2.5 py-1 border border-black/20 text-[11px] font-mono hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">إكس / تويتر (1200×675)</button>
+              <button type="button" data-preset="1584x396" class="px-2.5 py-1 border border-black/20 text-[11px] font-mono hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">لينكد إن غلاف (1584×396)</button>
+            </div>
+            <p class="text-[11px] font-mono text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-800/50 p-2 border border-black/5 dark:border-slate-700/50 flex items-center gap-1.5">
+              <span>💡</span>
+              <span><strong>تنبيه شفاف:</strong> إذا كانت صورتك أصغر من المقاس المختار، سيتم تكبير الأبعاد وقد يزداد حجم الملف خفيفاً — يُنصح باختيار صيغة <strong>WebP</strong> للتقليل الحاسم.</span>
+            </p>
+          </div>
+
+          <!-- Fit Mode Selection for Resizing -->
+          <div class="bg-slate-50 dark:bg-slate-800/80 p-3.5 border border-black/10 dark:border-slate-700 space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">طريقة ضبط الصورة عند اختلاف النسبة (Fit Mode):</span>
+              <span class="text-[10px] font-mono text-slate-400">تمنع تشوه البيكسلات</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <button type="button" data-fit-mode="contain-blur" class="flex flex-col items-start p-2.5 border-2 border-black bg-black text-white dark:bg-white dark:text-black text-right transition">
+                <span class="text-xs font-bold font-mono">1. خلفية ضبابية (Blur Fill) ⭐</span>
+                <span class="text-[10px] opacity-80 mt-0.5 leading-tight">النمط الافتراضي - إظهار الصورة كاملة مع خلفية مموهة أنيقة</span>
+              </button>
+              <button type="button" data-fit-mode="cover" class="flex flex-col items-start p-2.5 border border-black/20 hover:border-black dark:hover:border-white text-right transition">
+                <span class="text-xs font-bold font-mono">2. قص ذكي (Cover) ✂️</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 mt-0.5 leading-tight">تعبئة المقاس وقص الزوائد مع شريط تحكم بالموضع</span>
+              </button>
+              <button type="button" data-fit-mode="stretch" class="flex flex-col items-start p-2.5 border border-black/20 hover:border-black dark:hover:border-white text-right transition">
+                <span class="text-xs font-bold font-mono">3. تمديد (Stretch) ↔️</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 mt-0.5 leading-tight">إجبار الصورة على الأبعاد بالضبط (قد يتمدد الشكل)</span>
+              </button>
+            </div>
+
+            <!-- Crop Position Controller (Shown only when fit-mode = cover) -->
+            <div id="crop-position-control" class="hidden pt-2 border-t border-black/10 dark:border-slate-700/60 space-y-2">
+              <div class="flex items-center justify-between">
+                <label for="crop-position-slider" class="text-[11px] font-mono font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+                  <span>🎯</span>
+                  <span>موضع التركيز والقص (Crop Position):</span>
+                </label>
+                <span id="crop-position-val" class="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50 px-2 py-0.5 border border-indigo-200 dark:border-indigo-800">50% (المنتصف)</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <button type="button" data-crop-preset="0" class="px-2 py-1 bg-white dark:bg-slate-900 border border-black/20 dark:border-slate-600 text-[10px] font-mono hover:bg-black hover:text-white transition shrink-0">0% (أعلى / يسار)</button>
+                <input id="crop-position-slider" type="range" min="0" max="100" value="50" step="1" class="w-full accent-black dark:accent-white cursor-pointer h-2 bg-slate-200 dark:bg-slate-700 rounded-none" />
+                <button type="button" data-crop-preset="100" class="px-2 py-1 bg-white dark:bg-slate-900 border border-black/20 dark:border-slate-600 text-[10px] font-mono hover:bg-black hover:text-white transition shrink-0">100% (أسفل / يمين)</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+            <div>
+              <label for="width-input" class="block text-[10px] uppercase font-mono tracking-wider text-slate-400 mb-1">العرض (px):</label>
+              <input id="width-input" type="number" placeholder="تلقائي" class="w-full px-3 py-1.5 bg-white dark:bg-slate-800 border border-black/30 dark:border-slate-600 text-xs font-mono font-bold focus:outline-none focus:border-black" />
+            </div>
+            <div>
+              <label for="height-input" class="block text-[10px] uppercase font-mono tracking-wider text-slate-400 mb-1">الارتفاع (px):</label>
+              <input id="height-input" type="number" placeholder="تلقائي" class="w-full px-3 py-1.5 bg-white dark:bg-slate-800 border border-black/30 dark:border-slate-600 text-xs font-mono font-bold focus:outline-none focus:border-black" />
+            </div>
+            <div class="sm:pt-4">
+              <label class="inline-flex items-center gap-2 cursor-pointer">
+                <input id="keep-aspect" type="checkbox" checked class="w-4 h-4 accent-black" />
+                <span class="text-xs font-bold text-slate-700 dark:text-slate-300">نسبة الأبعاد الأفقية والرأسية</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drag & Drop Upload Zone -->
+      <div id="drop-zone" class="relative border-2 border-dashed border-slate-300 dark:border-slate-700 hover:border-black dark:hover:border-white h-48 flex flex-col items-center justify-center gap-3 bg-slate-50/50 dark:bg-slate-900/50 transition-colors cursor-pointer group">
+        <input id="file-input" type="file" multiple accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
+        
+        <div class="w-12 h-12 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center text-xl font-bold group-hover:scale-105 transition-transform">
+          +
+        </div>
+
+        <p class="font-bold text-sm sm:text-base text-slate-900 dark:text-white">اسحب الصور هنا أو اختر ملفاً من جهازك</p>
+        <p class="text-xs font-mono opacity-50">PNG, JPG, WebP, AVIF, GIF (حتى 10 ميجابايت)</p>
+      </div>
+
+      <!-- Summary Stats Container -->
+      <div id="summary-stats" class="mt-6"></div>
+
+      <!-- Batch Actions Bar -->
+      <div id="batch-actions" class="hidden mt-6 flex-wrap items-center justify-between gap-3 p-4 bg-slate-100 dark:bg-slate-900 border border-black/80 dark:border-slate-700 shadow-editorial">
+        <div class="flex flex-wrap items-center gap-2.5">
+          <button id="download-all-btn" type="button" class="px-4 py-2.5 bg-black hover:bg-neutral-800 text-white dark:bg-white dark:text-black dark:hover:bg-neutral-200 text-xs font-bold font-mono tracking-wider transition flex items-center gap-2 cursor-pointer shadow-xs active:scale-95">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>تحميل جميع الصور (ZIP)</span>
+          </button>
+
+          <button id="download-pdf-btn" type="button" class="px-4 py-2.5 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-900 dark:text-white text-xs font-bold font-mono border border-black/80 dark:border-slate-600 transition flex items-center gap-2 cursor-pointer shadow-xs active:scale-95">
+            <svg class="w-4 h-4 text-rose-600 dark:text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+            <span>تحويل الكل إلى PDF</span>
+          </button>
+
+          <button id="compress-all-btn" type="button" class="px-4 py-2.5 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-bold font-mono border border-black/30 dark:border-slate-600 transition flex items-center gap-2 cursor-pointer shadow-xs active:scale-95">
+            <svg class="w-4 h-4 text-slate-600 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+            <span>إعادة ضغط الكل</span>
+          </button>
+        </div>
+
+        <button id="clear-all-btn" type="button" class="px-3.5 py-2.5 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/40 text-xs font-bold font-mono border border-transparent hover:border-red-200 dark:hover:border-red-900 transition flex items-center gap-1.5 cursor-pointer mr-auto sm:mr-0 active:scale-95">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+          <span>مسح القائمة</span>
+        </button>
+      </div>
+
+      <!-- File Queue Container -->
+      <div id="empty-state" class="text-center py-12 text-slate-400 font-medium text-sm">
+        لم يتم رفع أي صور بعد. قم بسحب صورك في المربع أعلاه للبدء فوراً.
+      </div>
+
+      <div id="file-list" class="mt-6 space-y-4"></div>
+
+    </div>
+  </section>
+
+  <!-- Mid Content AdSense Placeholder -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
+    <div class="bg-slate-100 dark:bg-slate-800/60 border border-dashed border-slate-300 dark:border-slate-700 rounded-2xl p-4 text-center">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-0000000000000000"
+           data-ad-slot="1000000002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <span class="text-xs text-slate-400 font-semibold">مساحة إعلانية (Google AdSense Placeholder)</span>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-white dark:bg-slate-900 border-y border-black/10 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold serif text-slate-900 dark:text-white mb-3">لماذا تختار ضاغط الصور الخاص بنا؟</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm font-medium">مميزات فريدة تضمن لك أفضل أداء وأقصى درجات الأمان لمستنداتك وصورك.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="p-6 bg-slate-50 dark:bg-slate-800 border border-black/80 dark:border-slate-700 shadow-editorial">
+          <div class="w-10 h-10 bg-black text-white dark:bg-white dark:text-black font-mono font-bold flex items-center justify-center text-sm mb-4">
+            01
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">سرعة معالجة فائقة</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">تتم المعالجة مباشرة داخل المتصفح عبر خوارزميات Canvas الحديثة بلمح البصر دون انتظار رفع الملفات.</p>
+        </div>
+
+        <div class="p-6 bg-slate-50 dark:bg-slate-800 border border-black/80 dark:border-slate-700 shadow-editorial">
+          <div class="w-10 h-10 bg-black text-white dark:bg-white dark:text-black font-mono font-bold flex items-center justify-center text-sm mb-4">
+            02
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">خصوصية وأمان 100%</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">صورك لا تغادر جهازك إطلاقاً! لا يتم إرسال أي صورة إلى أي سيرفر خارجي مما يضمن الحفاظ التام على سيرتك وصورك.</p>
+        </div>
+
+        <div class="p-6 bg-slate-50 dark:bg-slate-800 border border-black/80 dark:border-slate-700 shadow-editorial">
+          <div class="w-10 h-10 bg-black text-white dark:bg-white dark:text-black font-mono font-bold flex items-center justify-center text-sm mb-4">
+            03
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">دعم صيغ WebP & AVIF</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">قم بتحويل صورتك بسهولة إلى صيغ الجيل القادم الموصى بها من جوجل لتحسين سرعة ترتيب موقعك في محركات البحث.</p>
+        </div>
+
+        <div class="p-6 bg-slate-50 dark:bg-slate-800 border border-black/80 dark:border-slate-700 shadow-editorial">
+          <div class="w-10 h-10 bg-black text-white dark:bg-white dark:text-black font-mono font-bold flex items-center justify-center text-sm mb-4">
+            04
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">مجاني تماماً وبدون تسجيل</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">استمتع بضغط وتحويل عدد لا محدود من الصور بدون أي اشتراكات أو رسوم مخفية أو تسجيل حساب.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section for SEO & User Guide -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold serif text-slate-900 dark:text-white mb-3">الأسئلة الشائعة حول ضغط الصور</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm font-medium">إجابات شاملة لأكثر الاستفسارات شيوعاً حول الضغط وتحويل الصيغ.</p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="p-6 bg-white dark:bg-slate-800 border border-black/60 dark:border-slate-700 shadow-sm">
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">كيف يساعد ضغط الصور في تحسين سرعة موقعي و SEO؟</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">الصور ذات الحجم الكبيرة تبطئ تحميل الصفحات. تقليل حجم الصور بنسبة 70%-90% مع استخدام صيغ WebP يقلل استهلاك الباندويث ويحسن تقييم Core Web Vitals في محرك بحث Google.</p>
+        </div>
+
+        <div class="p-6 bg-white dark:bg-slate-800 border border-black/60 dark:border-slate-700 shadow-sm">
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">هل تتأثر جودة الصورة عند الضغط؟</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">عند الضغط بمستوى جودة 75% - 85%، يتم إزالة البيانات المكررة والملاحظات غير المرئية بالعين المجردة، فتصغر المساحة بنسبة كبيرة مع الاحتفاظ بدقة بصرية متطابقة تقريباً.</p>
+        </div>
+
+        <div class="p-6 bg-white dark:bg-slate-800 border border-black/60 dark:border-slate-700 shadow-sm">
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">هل يتم رفع صوري إلى أي خوادم أو حفظها؟</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">مطلقاً! تتم جميع العمليات محلياً على جهازك باستخدام تقنيات JavaScript Canvas في المتصفح. لا نطلع ولا نخزن أي ملف من ملفاتك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Comparison Preview Modal -->
+  <div id="compare-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-xs hidden items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div class="bg-white dark:bg-slate-800 border-2 border-black max-w-4xl w-full p-5 sm:p-6 shadow-editorial-lg space-y-5 my-auto">
+      
+      <!-- Modal Header -->
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-black/10 dark:border-slate-700 pb-4">
+        <div>
+          <h3 id="compare-title" class="text-base sm:text-lg font-bold serif text-slate-900 dark:text-white">معاينة المقارنة البصرية</h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">قارن الفرق في الجودة والتفاصيل قبل وبعد الضغط</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <!-- View Toggle Buttons -->
+          <div class="inline-flex border border-black/20 dark:border-slate-700 p-0.5 bg-slate-100 dark:bg-slate-900">
+            <button id="view-mode-slider" type="button" class="px-3 py-1 text-xs font-mono font-bold bg-black text-white dark:bg-white dark:text-black transition">
+              شريط التمرير
+            </button>
+            <button id="view-mode-split" type="button" class="px-3 py-1 text-xs font-mono font-bold text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">
+              شاشتان
+            </button>
+          </div>
+
+          <button id="close-compare-modal" class="text-slate-500 hover:text-black dark:hover:text-white p-1.5 transition font-mono font-bold text-base">
+            [✕]
+          </button>
+        </div>
+      </div>
+
+      <!-- Interactive Before/After Slider View -->
+      <div id="compare-slider-view" class="space-y-3">
+        <!-- Interactive Canvas Frame -->
+        <div id="compare-slider-frame" class="relative w-full h-[320px] sm:h-[420px] bg-slate-900 border-2 border-black dark:border-slate-700 overflow-hidden select-none dir-ltr touch-none cursor-ew-resize">
+          
+          <!-- Bottom Image: Original -->
+          <img id="slider-orig-img" src="" alt="Original" class="absolute inset-0 w-full h-full object-contain pointer-events-none" />
+
+          <!-- Top Image Clip Wrapper: Compressed -->
+          <div id="slider-comp-wrapper" class="absolute inset-0 w-full h-full pointer-events-none" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+            <img id="slider-comp-img" src="" alt="Compressed" class="absolute inset-0 w-full h-full object-contain pointer-events-none" />
+          </div>
+
+          <!-- Vertical Divider Line & Handle -->
+          <div id="slider-divider" class="absolute top-0 bottom-0 w-0.5 bg-white shadow-xl z-20 pointer-events-none" style="left: 50%;">
+            <div class="w-9 h-9 rounded-full bg-black text-white border-2 border-white flex items-center justify-center font-mono font-bold text-xs shadow-2xl absolute top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none">
+              ◀▶
+            </div>
+          </div>
+
+          <!-- Label Overlays -->
+          <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-xs text-white px-2.5 py-1 text-[11px] font-mono font-bold z-10 border border-white/20">
+            بعد: <span id="slider-comp-size-badge" class="text-emerald-400 font-extrabold"></span>
+          </div>
+          <div class="absolute top-3 right-3 bg-black/80 backdrop-blur-xs text-white px-2.5 py-1 text-[11px] font-mono font-bold z-10 border border-white/20">
+            قبل: <span id="slider-orig-size-badge" class="text-slate-300 font-bold"></span>
+          </div>
+
+          <!-- Invisible Range Input Overlay -->
+          <input id="compare-slider-input" type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30" />
+        </div>
+
+        <!-- Instructions & Savings summary -->
+        <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+          <span class="text-slate-500 dark:text-slate-400">👈 حرك الشريط يميناً ويساراً لمقارنة تفاصيل الجودة 👈</span>
+          <span id="slider-savings-badge" class="bg-black text-white dark:bg-white dark:text-black font-bold px-2 py-0.5"></span>
+        </div>
+      </div>
+
+      <!-- Side-By-Side Split View (Initially Hidden) -->
+      <div id="compare-split-view" class="hidden grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-2">
+          <span class="block text-xs uppercase font-mono tracking-widest text-slate-500">الصورة الأصلية (قبل)</span>
+          <div class="h-64 bg-slate-100 dark:bg-slate-900 overflow-hidden border border-black/20 flex items-center justify-center">
+            <img id="compare-orig-img" src="" alt="Original" class="max-h-full max-w-full object-contain" />
+          </div>
+          <div id="compare-orig-meta" class="text-xs font-mono font-bold text-slate-700 dark:text-slate-300 text-center"></div>
+        </div>
+
+        <div class="space-y-2">
+          <span class="block text-xs uppercase font-mono tracking-widest text-black dark:text-white font-bold">الصورة المضغوطة (بعد)</span>
+          <div class="h-64 bg-slate-100 dark:bg-slate-900 overflow-hidden border-2 border-black flex items-center justify-center">
+            <img id="compare-comp-img" src="" alt="Compressed" class="max-h-full max-w-full object-contain" />
+          </div>
+          <div id="compare-comp-meta" class="text-xs font-mono font-bold text-black dark:text-white text-center"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- OCR Text & Math Extraction Modal -->
+  <div id="ocr-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-xs hidden items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div class="bg-white dark:bg-slate-800 border-2 border-black max-w-3xl w-full p-5 sm:p-6 shadow-editorial-lg space-y-4 my-auto">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between border-b border-black/10 dark:border-slate-700 pb-3">
+        <div>
+          <h3 class="text-base sm:text-lg font-bold serif text-slate-900 dark:text-white flex items-center gap-2">
+            <span>📝</span>
+            <span>استخراج النصوص والمعادلات الرياضية (OCR)</span>
+          </h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">تحويل الكلمات والمعادلات الرياضية والرموز بالصورة إلى نص أو صيغة LaTeX قابلة للنسخ</p>
+        </div>
+        <button id="close-ocr-modal" type="button" class="text-slate-500 hover:text-black dark:hover:text-white p-1.5 transition font-mono font-bold text-base cursor-pointer">
+          [✕]
+        </button>
+      </div>
+
+      <!-- Mode Selector Tabs -->
+      <div class="flex flex-wrap items-center gap-2 border-b border-black/10 dark:border-slate-700 pb-2">
+        <button id="ocr-tab-text" type="button" class="px-4 py-2 text-xs font-mono font-bold bg-black text-white dark:bg-white dark:text-black border border-black transition cursor-pointer flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <span>استخراج النصوص (Tesseract OCR)</span>
+        </button>
+        <button id="ocr-tab-math" type="button" class="px-4 py-2 text-xs font-mono font-bold bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300 border border-black/20 dark:border-slate-600 hover:bg-slate-200 transition cursor-pointer flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M12 7h.01M15 7h.01"></path></svg>
+          <span>استخراج المعادلات والرموز الرياضية (Math AI / equ)</span>
+        </button>
+      </div>
+
+      <!-- Controls & Language Selector (Standard Text Mode) -->
+      <div id="ocr-text-controls" class="flex flex-wrap items-center justify-between gap-3 bg-slate-50 dark:bg-slate-900 p-3 border border-black/10 dark:border-slate-700">
+        <div class="flex items-center gap-2">
+          <label for="ocr-lang-select" class="text-xs font-mono font-bold text-slate-700 dark:text-slate-300">لغة النص:</label>
+          <select id="ocr-lang-select" class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-black/20 dark:border-slate-600 text-xs font-mono font-bold focus:outline-none cursor-pointer">
+            <option value="ara+eng" selected>العربية + الإنجليزية (ara+eng)</option>
+            <option value="ara">العربية فقط (ara)</option>
+            <option value="eng">الإنجليزية فقط (eng)</option>
+            <option value="fra">الفرنسية (fra)</option>
+          </select>
+        </div>
+
+        <button id="reprocess-ocr-btn" type="button" class="px-3.5 py-1.5 bg-black text-white dark:bg-white dark:text-black text-xs font-mono font-bold hover:bg-neutral-800 transition flex items-center gap-1.5 cursor-pointer">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          إعادة التحليل
+        </button>
+      </div>
+
+      <!-- Controls for Math OCR Mode (Gemini AI / equ) -->
+      <div id="ocr-math-controls" class="hidden flex-col gap-3 bg-indigo-50/70 dark:bg-slate-900 p-3 border border-indigo-200 dark:border-slate-700">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <label for="ocr-math-lang-select" class="text-xs font-mono font-bold text-slate-700 dark:text-slate-300">محرك المعالجة:</label>
+            <select id="ocr-math-lang-select" class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-indigo-300 dark:border-slate-600 text-xs font-mono font-bold focus:outline-none cursor-pointer">
+              <option value="gemini" selected>الذكاء الاصطناعي الفائق (Gemini AI + LaTeX)</option>
+              <option value="equ">محرك Tesseract المحلي (equ)</option>
+            </select>
+          </div>
+
+          <button id="run-math-ocr-btn" type="button" class="px-4 py-2 bg-indigo-950 text-white dark:bg-indigo-100 dark:text-indigo-950 text-xs font-mono font-bold hover:bg-black transition flex items-center gap-1.5 cursor-pointer shadow-xs active:scale-95">
+            <svg class="w-4 h-4 text-amber-400 dark:text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            <span>استخراج الرموز والمعادلات</span>
+          </button>
+        </div>
+
+        <!-- Fallback Status Banner -->
+        <div id="graceful-fallback-banner" class="hidden text-[11px] font-mono bg-amber-100 dark:bg-amber-950/80 text-amber-900 dark:text-amber-200 p-2 border border-amber-300 dark:border-amber-700 flex items-center gap-2">
+          <span>⚠️</span>
+          <span id="fallback-banner-msg">وصلنا للحد المجاني اليوم 😅 جرّب الوضع المحلي أو عد غداً</span>
+        </div>
+      </div>
+
+      <!-- Progress Status Indicator -->
+      <div id="ocr-progress-container" class="space-y-1.5">
+        <div class="flex items-center justify-between text-xs font-mono">
+          <span id="ocr-status-text" class="text-slate-600 dark:text-slate-400 font-bold">جاري تجهيز محرك OCR...</span>
+          <span id="ocr-percent-text" class="font-bold text-black dark:text-white">0%</span>
+        </div>
+        <div class="w-full bg-slate-200 dark:bg-slate-700 h-2 overflow-hidden">
+          <div id="ocr-progress-bar" class="bg-emerald-600 h-full w-0 transition-all duration-200"></div>
+        </div>
+      </div>
+
+      <!-- Result View Container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Thumbnail Preview -->
+        <div class="md:col-span-1 border border-black/10 dark:border-slate-700 p-2 bg-slate-50 dark:bg-slate-900/50 flex flex-col items-center justify-center min-h-[160px]">
+          <img id="ocr-preview-img" src="" alt="OCR Target" class="max-h-48 w-full object-contain" />
+        </div>
+
+        <!-- Output Textarea & Rendered Math View -->
+        <div class="md:col-span-2 space-y-2">
+          <textarea id="ocr-output-text" rows="7" placeholder="سيظهر النص أو رمز LaTeX المستخرج هنا..." class="w-full p-3 bg-slate-50 dark:bg-slate-900 border border-black/20 dark:border-slate-700 text-xs sm:text-sm font-sans leading-relaxed focus:outline-none focus:border-black dark:focus:border-white resize-y dir-auto"></textarea>
+          
+          <!-- Rendered Math Output Container -->
+          <div id="math-rendered-preview" class="hidden p-3 bg-white dark:bg-slate-900 border border-indigo-200 dark:border-slate-700 rounded-none text-slate-900 dark:text-white overflow-x-auto">
+            <div class="text-[11px] font-mono font-bold text-slate-400 mb-1">معاينة المعادلات الرياضية:</div>
+            <div id="math-katex-output" class="text-sm font-sans py-1"></div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span id="ocr-word-count" class="text-[11px] font-mono text-slate-500">عدد الكلمات: 0</span>
+            
+            <div class="flex flex-wrap items-center gap-2">
+              <button id="ocr-copy-btn" type="button" class="px-3 py-1.5 bg-black hover:bg-neutral-800 text-white dark:bg-white dark:text-black text-xs font-mono font-bold transition flex items-center gap-1.5 active:scale-95 cursor-pointer">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                <span>نسخ النص</span>
+              </button>
+
+              <button id="ocr-download-btn" type="button" class="px-3 py-1.5 border border-black/20 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-mono font-bold transition flex items-center gap-1.5 active:scale-95 cursor-pointer">
+                <svg class="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                <span>حفظ كملف TXT</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-black/10 dark:border-slate-800 pt-12 pb-8 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Footer Bottom AdSense Placeholder -->
+      <div class="mb-10 bg-slate-100 dark:bg-slate-800/60 border border-dashed border-slate-300 dark:border-slate-700 p-3 text-center">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-0000000000000000"
+             data-ad-slot="1000000003"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400">Google AdSense Space</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-black/10 dark:border-slate-800">
+        <!-- Brand Info -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl font-bold tracking-tighter serif text-slate-900 dark:text-white">ضاغط الصور.</span>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed max-w-sm">
+            موقع مجاني متخصص لضغط وتحويل صيغ الصور أونلاين بدقة عالية وبدون أي تأثير على الجودة.
+          </p>
+          <div class="pt-2 text-xs font-bold text-slate-700 dark:text-slate-300">
+            تم التطوير بواسطة: <span class="text-black dark:text-white font-extrabold">يوسف محمد عبد الفتاح</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white mb-4">روابط سريعة</h4>
+          <ul class="space-y-2.5 text-xs font-bold text-slate-600 dark:text-slate-400">
+            <li><a href="/index.html" class="hover:text-black dark:hover:text-white transition">الرئيسية (أداة الضغط)</a></li>
+            <li><a href="/blog.html" class="hover:text-black dark:hover:text-white transition">المدونة والدروس</a></li>
+            <li><a href="/about.html" class="hover:text-black dark:hover:text-white transition">عن الموقع والمنشئ</a></li>
+            <li><a href="/contact.html" class="hover:text-black dark:hover:text-white transition">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Contact Info -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white mb-4">السياسات والتواصل</h4>
+          <ul class="space-y-2.5 text-xs font-bold text-slate-600 dark:text-slate-400 mb-4">
+            <li><a href="/privacy-policy.html" class="hover:text-black dark:hover:text-white transition">سياسة الخصوصية</a></li>
+            <li><a href="/terms.html" class="hover:text-black dark:hover:text-white transition">الشروط والأحكام</a></li>
+            <li><a href="/sitemap.xml" target="_blank" class="hover:text-black dark:hover:text-white transition">خريطة الموقع (Sitemap)</a></li>
+          </ul>
+          <div class="text-xs text-slate-500 font-medium">
+            البريد الإلكتروني: <a href="mailto:yousefmohmedabdo222@gmail.com" class="text-slate-900 dark:text-white underline block mt-0.5 dir-ltr text-right font-mono font-bold">yousefmohmedabdo222@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 text-center text-[10px] font-mono uppercase tracking-widest text-slate-400">
+        © 2026 ضاغط ومحول صيغ الصور. جميع الحقوق محفوظة | تم التطوير بواسطة يوسف محمد عبد الفتاح.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/js/compressor.ts"></script>
+  <script>
+    // Mobile navbar toggle script
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      if (menu) menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

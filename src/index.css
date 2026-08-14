@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Noto Kufi Arabic', 'Cairo', system-ui, -apple-system, sans-serif;
+    background-color: #F8F9FA;
+    color: #1A1A1A;
+  }
+}
+
+.serif, .font-serif {
+  font-family: 'Amiri', 'Noto Serif Arabic', 'Georgia', serif;
+}
+
+/* Custom range slider thumb styling - Editorial Black */
+input[type=range] {
+  -webkit-appearance: none;
+  background: #e5e7eb;
+  height: 4px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-editorial {
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-editorial-lg {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.dir-ltr {
+  direction: ltr !important;
+}
+

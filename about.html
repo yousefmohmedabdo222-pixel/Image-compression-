@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عن الموقع - ضاغط ومحول صيغ الصور | يوسف محمد عبد الفتاح</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="تعرّف على موقع ضاغط ومحول صيغ الصور ورسالته في تقديم أدوات معالجة صور مجانية وآمنة 100% بدون الحاجة لرفع الصور إلى أي خادم. تم التطوير بواسطة يوسف محمد عبد الفتاح." />
+  <meta name="author" content="يوسف محمد عبد الفتاح" />
+  <link rel="canonical" href="https://example.com/about.html" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="عن الموقع - ضاغط ومحول صيغ الصور | يوسف محمد عبد الفتاح" />
+  <meta property="og:description" content="تعرّف على قصة تطوير ورسالة أداة ضاغط ومحول صيغ الصور المجانية من تطوير يوسف محمد عبد الفتاح." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/about.html" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN & Local Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="/src/index.css" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6594391134376233" crossorigin="anonymous"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "عن الموقع - ضاغط ومحول صيغ الصور",
+    "url": "https://example.com/about.html",
+    "description": "صفحة تعبر عن رسالة وأهداف موقع ضاغط ومحول صيغ الصور والمطور يوسف محمد عبد الفتاح.",
+    "publisher": {
+      "@type": "Person",
+      "name": "يوسف محمد عبد الفتاح",
+      "email": "yousefmohmedabdo222@gmail.com"
+    }
+  }
+  </script>
+</head>
+<body class="bg-[#F8F9FA] text-[#1A1A1A] dark:bg-slate-900 dark:text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-black/10 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-8">
+        <a href="/index.html" class="group flex items-center gap-2">
+          <span class="text-2xl sm:text-3xl font-bold tracking-tighter serif text-slate-900 dark:text-white">ضاغط الصور.</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-bold tracking-wide">
+          <a href="/index.html" class="text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">الرئيسية</a>
+          <a href="/blog.html" class="text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">المدونة والدروس</a>
+          <a href="/about.html" class="text-slate-900 dark:text-white border-b-2 border-black dark:border-white pb-0.5">عن الموقع</a>
+          <a href="/contact.html" class="text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">اتصل بنا</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="/index.html" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-black hover:bg-neutral-800 text-white dark:bg-white dark:text-black text-xs font-bold tracking-widest uppercase transition shadow-sm">
+          جرب الأداة الآن
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden border-t border-black/10 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 py-4 space-y-3 font-bold text-sm">
+      <a href="/index.html" class="block py-2 text-slate-600 dark:text-slate-300">الرئيسية</a>
+      <a href="/blog.html" class="block py-2 text-slate-600 dark:text-slate-300">المدونة والدروس</a>
+      <a href="/about.html" class="block py-2 text-slate-900 dark:text-white font-bold border-r-2 border-black pl-2">عن الموقع</a>
+      <a href="/contact.html" class="block py-2 text-slate-600 dark:text-slate-300">اتصل بنا</a>
+    </div>
+  </header>
+
+  <!-- Top Banner AdSense Placeholder -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div class="bg-slate-100 dark:bg-slate-800/60 border border-dashed border-slate-300 dark:border-slate-700 rounded-2xl p-4 text-center">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-0000000000000000"
+           data-ad-slot="2000000001"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <span class="text-xs text-slate-400 font-semibold">مساحة إعلانية (Google AdSense Placeholder)</span>
+    </div>
+  </div>
+
+  <!-- Page Header Title -->
+  <section class="py-12 bg-white dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-4">عن الموقع والمنشئ</h1>
+      <p class="text-base text-slate-600 dark:text-slate-300 font-medium max-w-2xl mx-auto">
+        قصة وتفاصيل تطوير أداة ضاغط ومحول صيغ الصور، ورسالتنا لتوفير حلول ويب آمنة ومجانية 100%.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto space-y-12">
+    
+    <!-- Developer Card -->
+    <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden">
+      <div class="absolute -left-10 -bottom-10 w-48 h-48 bg-indigo-500/20 rounded-full blur-2xl"></div>
+      <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+        <div class="w-28 h-28 bg-gradient-to-tr from-indigo-500 to-violet-500 rounded-full flex items-center justify-center text-3xl font-black shadow-inner shrink-0 border-4 border-white/10">
+          ي.م
+        </div>
+        <div class="space-y-3 text-center md:text-right">
+          <div class="inline-block px-3 py-1 bg-indigo-500/30 text-indigo-200 rounded-full text-xs font-bold">مطور التطبيق والمنشئ</div>
+          <h2 class="text-2xl sm:text-3xl font-black text-white">يوسف محمد عبد الفتاح</h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
+            مطور ويب شغوف بتصميم وتطوير أدوات وتطبيقات الويب عالية الأداء التي تركز على سرعة الاستجابة وخصوصية المستخدم والتصميم العالي الجودة.
+          </p>
+          <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs font-semibold text-indigo-300">
+            <span>البريد الإلكتروني: <a href="mailto:yousefmohmedabdo222@gmail.com" class="text-white underline hover:text-indigo-200 transition dir-ltr">yousefmohmedabdo222@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mission & Vision Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white">رؤية وهدف الموقع</h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          تم إنشاء هذا الموقع لتلبية حاجة المطورين، والمصممين، وأصحاب المواقع، والمستخدمين العاديين لأداة بسيطة وسريعة لتقليل حجم الصور وتحويل صيغها بدون قيود معقدة أو متطلبات تسجيل.
+        </p>
+      </div>
+
+      <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white">فلسفة الخصوصية والأمان</h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          نحن نؤمن بأن صورك الشخصية ومستنداتك هي ملكك الخاص. تم بناء هذا الموقع بتقنيات المعالجة المحلية في متصفحك (Client-Side Canvas Processing)، وبالتالي لا تمر أي صورة عبر أي سيرفر خارجي.
+        </p>
+      </div>
+    </div>
+
+    <!-- Technical Specs -->
+    <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+      <h3 class="text-2xl font-black text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-700 pb-4">
+        التقنيات المستخدمة في الموقع
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs sm:text-sm">
+        <div class="space-y-2">
+          <span class="font-bold text-indigo-600 dark:text-indigo-400 block">HTML5 Canvas API</span>
+          <p class="text-slate-500 dark:text-slate-400">إعادة رسم وضغط أبعاد الصور بجودة عالية دون فقدان الوضوح البصري.</p>
+        </div>
+        <div class="space-y-2">
+          <span class="font-bold text-indigo-600 dark:text-indigo-400 block">WebP & AVIF Encoders</span>
+          <p class="text-slate-500 dark:text-slate-400">ترميز أحدث صيغ الضغط العالمية لتوفير ما يصل إلى 90% من المساحة.</p>
+        </div>
+        <div class="space-y-2">
+          <span class="font-bold text-indigo-600 dark:text-indigo-400 block">Modern JavaScript & Tailwind</span>
+          <p class="text-slate-500 dark:text-slate-400">تجربة تفاعلية سلسة متجاوبة تماماً مع جميع الأجهزة والهواتف الذكية.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-12 pb-8 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-200 dark:border-slate-800">
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            </div>
+            <span class="text-lg font-black text-slate-900 dark:text-white">ضاغط ومحول صيغ الصور</span>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed max-w-sm">
+            موقع مجاني متخصص لضغط وتحويل صيغ الصور أونلاين بدقة عالية وبدون أي تأثير على الجودة.
+          </p>
+          <div class="pt-2 text-xs font-bold text-slate-700 dark:text-slate-300">
+            تم التطوير بواسطة: <span class="text-indigo-600 dark:text-indigo-400">يوسف محمد عبد الفتاح</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-black text-slate-900 dark:text-white mb-4">روابط سريعة</h4>
+          <ul class="space-y-2.5 text-xs font-bold text-slate-600 dark:text-slate-400">
+            <li><a href="/index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">الرئيسية (أداة الضغط)</a></li>
+            <li><a href="/blog.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">المدونة والدروس</a></li>
+            <li><a href="/about.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">عن الموقع والمنشئ</a></li>
+            <li><a href="/contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-black text-slate-900 dark:text-white mb-4">السياسات والتواصل</h4>
+          <ul class="space-y-2.5 text-xs font-bold text-slate-600 dark:text-slate-400 mb-4">
+            <li><a href="/privacy-policy.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">سياسة الخصوصية</a></li>
+            <li><a href="/terms.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">الشروط والأحكام</a></li>
+            <li><a href="/sitemap.xml" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">خريطة الموقع (Sitemap)</a></li>
+          </ul>
+          <div class="text-xs text-slate-500 font-semibold">
+            البريد الإلكتروني للتواصل: <a href="mailto:yousefmohmedabdo222@gmail.com" class="text-indigo-600 dark:text-indigo-400 underline block mt-0.5 dir-ltr text-right">yousefmohmedabdo222@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 text-center text-xs text-slate-400 font-semibold">
+        © 2026 ضاغط ومحول صيغ الصور. جميع الحقوق محفوظة | تم التطوير بواسطة يوسف محمد عبد الفتاح.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      if (menu) menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
